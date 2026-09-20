@@ -18,7 +18,7 @@
     <!-- Botones de descarga -->
     @if (roadmap()) {
       <div class="flex items-center justify-end gap-3 mb-8">
-          <button
+        <button
           type="button"
           (click)="downloadHtml()"
           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-semibold transition-colors"
@@ -34,6 +34,55 @@
         </button>
       </div>
     }
+
+    <!-- Guía de badges -->
+    <div
+      class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-5 mb-8"
+    >
+      <p
+        class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-3"
+      >
+        Guía de etiquetas
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <div class="flex items-center gap-2">
+          <span
+            class="text-xs px-2 py-0.5 rounded-full font-medium bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400"
+            >hot</span
+          >
+          <span class="text-xs text-gray-500 dark:text-gray-400"
+            >Muy demandado en el mercado ahora</span
+          >
+        </div>
+        <div class="flex items-center gap-2">
+          <span
+            class="text-xs px-2 py-0.5 rounded-full font-medium bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
+            >now</span
+          >
+          <span class="text-xs text-gray-500 dark:text-gray-400"
+            >Prioritario en esta etapa del roadmap</span
+          >
+        </div>
+        <div class="flex items-center gap-2">
+          <span
+            class="text-xs px-2 py-0.5 rounded-full font-medium bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400"
+            >ai</span
+          >
+          <span class="text-xs text-gray-500 dark:text-gray-400"
+            >Herramienta o habilidad de IA</span
+          >
+        </div>
+        <div class="flex items-center gap-2">
+          <span
+            class="text-xs px-2 py-0.5 rounded-full font-medium bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400"
+            >base</span
+          >
+          <span class="text-xs text-gray-500 dark:text-gray-400"
+            >Fundamento esencial, no negociable</span
+          >
+        </div>
+      </div>
+    </div>
 
     <!-- Fases -->
     @if (roadmap(); as data) {
