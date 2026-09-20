@@ -19,6 +19,7 @@ const PRESET_TECHS = [
   { label: 'Go', category: 'Backend' },
   { label: 'PHP', category: 'Backend' },
   { label: 'Ruby', category: 'Backend' },
+  { label: 'NestJS', category: 'Backend' },
   { label: 'PostgreSQL', category: 'Databases/Other' },
   { label: 'MongoDB', category: 'Databases/Other' },
   { label: 'Docker', category: 'Databases/Other' },
